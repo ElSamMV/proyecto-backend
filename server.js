@@ -14,11 +14,14 @@ app.use(express.json());
 const authRouter = require('./routes/auth');
 const usuariosRouter = require('./routes/usuarios');
 const equipoRoutes = require ('./routes/equipo');
+const torneoRoutes = require ('./routes/torneo');
 
 //usar rutas
 app.use('/api/auth', authRouter);
 app.use('/api/usuarios', usuariosRouter);
 app.use('/api/equipo', equipoRoutes);
+app.use('/api/torneo', torneoRoutes);
+
 
 //rutas de ejemplo 
 app.get("/", (req, res) => {
