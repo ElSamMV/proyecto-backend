@@ -1,0 +1,58 @@
+
+1. LOGIN 
+URL: http://localhost:5000/api/auth/login
+MÉTODO: POST
+
+DATOS JSON:
+{
+    "cedula": "",
+    "contrasena": ""
+}
+
+2. METODO GET UNICO
+URL: http://localhost:5000/api/usuarios/:id
+MÉTODO: GET
+
+Ejemplo:
+http://localhost:5000/api/usuarios/1
+
+3. METODO GET MULTIPLE
+URL: http://localhost:5000/api/usuarios?page=1&string=&limit=10
+
+
+4. AGREGAR DATOS JSON
+URL: http://localhost:5000/api/usuarios
+
+DATOS JSON:
+{
+  "cedula": "",
+  "contrasena": "",
+  "nombre_completo": "",
+  "fecha_nacimiento": "",
+  "correo": "",
+  "telefono": ""
+}
+
+
+METODO PUT
+URL: http://localhost:5000/api/usuarios/:id
+
+Ejemplo:
+http://localhost:5000/api/usuarios/1
+
+DATOS JSON (enviar solo los campos a actualizar):
+{
+  "contrasena": "",
+  "nombre_completo": "",
+  "fecha_nacimiento": "",
+  "correo": "",
+  "telefono": ""
+}
+
+
+METODO DELETE
+URL: http://localhost:5000/api/usuarios/:id
+MÉTODO: DELETE
+
+Ejemplo:
+http://localhost:5000/api/usuarios/1
